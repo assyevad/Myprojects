@@ -3,83 +3,126 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Unicorn</title>
+  <title>EVAzone - Boutique Enchantée</title>
   <style>
     body {
       margin: 0;
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #ffe6f0, #ffe0fb);
+      background-color: #fef6fb;
       color: #333;
-      text-align: center;
     }
     header {
-      padding: 50px 20px;
-    }
-    header img {
-      width: 100px;
-    }
-    h1 {
-      font-size: 3em;
-      color: #ff69b4;
-    }
-    nav {
-      margin: 30px 0;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-      color: #ff69b4;
-      border: 2px solid #ff69b4;
-      padding: 8px 16px;
-      border-radius: 25px;
-      transition: all 0.3s ease;
-    }
-    nav a:hover {
       background-color: #ff69b4;
       color: white;
+      padding: 30px;
+      text-align: center;
     }
-    section {
-      padding: 40px 20px;
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      background-color: #ffc0cb;
+      padding: 15px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 10px;
+      color: #333;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .hero {
+      text-align: center;
+      padding: 50px 20px;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .product {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .product img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .product h3 {
+      margin: 10px 0 5px;
+    }
+    .product p {
+      margin: 0;
     }
     footer {
       background-color: #ff69b4;
       color: white;
+      text-align: center;
       padding: 20px;
+    }
+    .calendly-container {
+      padding: 40px;
+      text-align: center;
+    }
+    iframe {
+      width: 100%;
+      height: 700px;
+      border: none;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Unicorn_Logo.svg/1024px-Unicorn_Logo.svg.png" alt="Logo Unicorn" />
-    <h1>Unicorn</h1>
-    <p>Magie, rêve et enchantement pour les enfants</p>
+    <h1>EVAzone</h1>
+    <p>Votre boutique enchantée pour petits et grands</p>
   </header>
 
   <nav>
-    <a href="#about">Qui sommes-nous</a>
-    <a href="#services">Nos services</a>
+    <a href="#home">Accueil</a>
+    <a href="#produits">Produits</a>
+    <a href="#rdv">Prendre rendez-vous</a>
     <a href="#contact">Contact</a>
   </nav>
 
-  <section id="about">
-    <h2>UnicorEva</h2>
-    <p>La magie derrière Unicorn. Une marque qui transforme chaque moment en souvenir féerique pour les enfants.</p>
+  <section class="hero" id="home">
+    <h2>Découvrez un univers magique</h2>
+    <p>Des produits féeriques, des idées cadeaux et des expériences inoubliables</p>
   </section>
 
-  <section id="services">
-    <h2>Nos services</h2>
-    <p>Mariages, anniversaires, baptêmes... Des univers enchantés conçus spécialement pour vos petits trésors 🦄✨</p>
+  <section class="products" id="produits">
+    <div class="product">
+      <img src="https://cdn.pixabay.com/photo/2020/01/14/12/45/unicorn-4763518_960_720.jpg" alt="Produit 1">
+      <h3>Peluche Licorne</h3>
+      <p>19,99€</p>
+    </div>
+    <div class="product">
+      <img src="https://cdn.pixabay.com/photo/2017/08/30/07/52/unicorn-2691745_960_720.jpg" alt="Produit 2">
+      <h3>Déguisement Licorne</h3>
+      <p>29,99€</p>
+    </div>
+    <div class="product">
+      <img src="https://cdn.pixabay.com/photo/2018/10/07/18/40/unicorn-3736522_960_720.jpg" alt="Produit 3">
+      <h3>Accessoires Magiques</h3>
+      <p>15,00€</p>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>📧 bonjour@unicorn-magie.com</p>
-    <p>📞 +33 6 12 34 56 78</p>
+  <section class="calendly-container" id="rdv">
+    <h2>Prendre rendez-vous</h2>
+    <p>Planifiez une consultation personnalisée avec notre équipe enchantée ✨</p>
+    <!-- Intégration Calendly -->
+    <iframe src="https://calendly.com/votre-identifiant" allowfullscreen></iframe>
   </section>
 
-  <footer>
-    &copy; 2025 Unicorn. Tous droits réservés.
+  <footer id="contact">
+    <p>Contact : contact@evazone.fr | +33 6 00 00 00 00</p>
+    <p>&copy; 2025 EVAzone. Tous droits réservés.</p>
   </footer>
 </body>
 </html>
