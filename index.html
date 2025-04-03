@@ -2,147 +2,147 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unicorn - Magie pour les Enfants</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EVAzone - Votre boutique magique</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Comic Sans MS', cursive, sans-serif;
-      background-color: #FFF0F6;
-      color: #3C3C3C;
+      font-family: 'Arial', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
     }
 
     header {
-      background-color: #FF69B4;
+      background-color: #6200ea;
       color: white;
       padding: 20px;
       text-align: center;
     }
 
-    header img {
-      height: 80px;
-    }
-
-    h1 {
-      margin: 10px 0 5px;
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
     }
 
     nav {
-      background-color: #FFC0CB;
+      background-color: #3700b3;
+      padding: 10px 0;
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
-      padding: 10px 0;
     }
 
     nav a {
-      color: #3C3C3C;
+      color: white;
       text-decoration: none;
       font-weight: bold;
-      padding: 8px 16px;
-      border-radius: 20px;
-      background-color: #FF69B4;
-      transition: background 0.3s;
     }
 
-    nav a:hover {
-      background-color: #ff4da6;
-    }
-
-    .section {
+    .hero {
       text-align: center;
-      padding: 40px 20px;
-      background-color: #ffffff;
+      padding: 60px 20px;
+      background: linear-gradient(to right, #bb86fc, #f3e5f5);
     }
 
-    .section h2 {
-      color: #FF69B4;
+    .hero h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
     }
 
-    .gallery {
+    .products {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 20px;
       padding: 40px;
-      background-color: #FFD6E8;
+      background-color: white;
     }
 
-    .gallery img {
+    .product {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    .product img {
       width: 100%;
-      height: auto;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      height: 150px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      font-size: 1.1em;
+      margin-bottom: 5px;
+    }
+
+    .product p {
+      color: #6200ea;
+      font-weight: bold;
     }
 
     footer {
-      background-color: #FF69B4;
+      background-color: #6200ea;
       color: white;
       text-align: center;
       padding: 20px;
     }
+
+    @media (max-width: 600px) {
+      .hero h2 {
+        font-size: 1.5em;
+      }
+    }
   </style>
 </head>
 <body>
+
   <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Unicorn_Logo.svg/1024px-Unicorn_Logo.svg.png" alt="Logo Unicorn">
-    <h1>Unicorn</h1>
-    <p>De la magie dans la vie des enfants 🦄✨</p>
+    <h1>EVAzone</h1>
+    <p>La magie du shopping en ligne ✨</p>
   </header>
 
   <nav>
-    <a href="#presentation">Présentation</a>
-    <a href="#galerie">Galerie</a>
-    <a href="#quisommesnous">Qui sommes-nous</a>
-    <a href="#services">Nos services</a>
-    <a href="#nouscontacter">Nous contacter</a>
+    <a href="#home">Accueil</a>
+    <a href="#products">Produits</a>
+    <a href="#contact">Contact</a>
+    <a href="#panier">Panier</a>
   </nav>
 
-  <section id="presentation" class="section">
-    <h2>Bienvenue dans le monde d'Unicorn</h2>
-    <p>
-      Unicorn est une marque dédiée aux enfants rêvant de magie, d'aventure et de couleurs arc-en-ciel. 
-      Nous créons des jouets, des vêtements et des accessoires féeriques pour faire briller les yeux des petits (et des grands) rêveurs !
-    </p>
+  <section class="hero" id="home">
+    <h2>Bienvenue sur EVAzone !</h2>
+    <p>Découvrez nos produits exclusifs, tendances et enchantés !</p>
   </section>
 
-  <section id="galerie" class="gallery">
-    <img src="https://cdn.pixabay.com/photo/2017/08/30/07/52/unicorn-2691745_960_720.jpg" alt="Unicorn Jouet 1">
-    <img src="https://cdn.pixabay.com/photo/2020/01/14/12/45/unicorn-4763518_960_720.jpg" alt="Unicorn Peluche">
-    <img src="https://cdn.pixabay.com/photo/2017/09/28/13/47/unicorn-2791461_960_720.jpg" alt="Unicorn Décoration">
-    <img src="https://cdn.pixabay.com/photo/2018/10/07/18/40/unicorn-3736522_960_720.jpg" alt="Unicorn Accessoire">
+  <section class="products" id="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150.png?text=Produit+1" alt="Produit 1">
+      <h3>T-shirt Licorne</h3>
+      <p>19,99 €</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150.png?text=Produit+2" alt="Produit 2">
+      <h3>Sac magique EVA</h3>
+      <p>29,99 €</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150.png?text=Produit+3" alt="Produit 3">
+      <h3>Boîte surprise enfant</h3>
+      <p>14,99 €</p>
+    </div>
+    <div class="product">
+      <img src="https://via.placeholder.com/200x150.png?text=Produit+4" alt="Produit 4">
+      <h3>Affiche décorative</h3>
+      <p>9,99 €</p>
+    </div>
   </section>
 
-  <section id="quisommesnous" class="section">
-    <h2>Qui sommes-nous ?</h2>
-    <p>
-      UnicorEva est la société derrière Unicorn, une entreprise passionnée par la féerie, l'imaginaire et le bonheur des enfants. 
-      Nous mettons tout notre cœur à créer des expériences magiques pour les petits et leurs familles.
-    </p>
-  </section>
-
-  <section id="services" class="section">
-    <h2>Nos services</h2>
-    <p>
-      Unicorn propose l'organisation et la décoration d'événements féeriques pour enfants :
-    </p>
-    <ul>
-      <li>Mariages (espaces enfants enchantés)</li>
-      <li>Anniversaires à thème licorne</li>
-      <li>Baptêmes avec magie et couleurs</li>
-      <li>Animations costumées et ateliers créatifs</li>
-    </ul>
-  </section>
-
-  <section id="nouscontacter" class="section">
-    <h2>Nous contacter</h2>
-    <p>Email : bonjour@unicorn-magie.com</p>
-    <p>Téléphone : +33 6 12 34 56 78</p>
-    <p>Adresse : 123 rue de la Féerie, 75000 Paris, France</p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Unicorn. Tous droits réservés.</p>
+  <footer id="contact">
+    <p>Contact : support@evazone.fr | +33 6 12 34 56 78</p>
+    <p>&copy; 2025 EVAzone. Tous droits réservés.</p>
   </footer>
+
 </body>
 </html>
